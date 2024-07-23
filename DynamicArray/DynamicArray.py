@@ -3,7 +3,7 @@ class DynamicArray:
     def __init__(self, capacity: int):
         self.capacity = capacity
         self.array = [None for i in range(0, self.capacity)]
-        self.length = -1 # keeps the last index
+        self.length = -1    
 
     def get(self, i: int) -> int:
         if i <= self.length and i >= 0:
@@ -27,7 +27,6 @@ class DynamicArray:
             self.length += 1
             self.array[self.length] = n
 
-
     def popback(self) -> int:
         val = self.array[self.length]
         self.array[self.length] = None
@@ -42,7 +41,6 @@ class DynamicArray:
         
         self.capacity = self.capacity * 2
         self.array = new_array
-
 
     def getSize(self) -> int:
         return self.length+1

@@ -1,7 +1,7 @@
 import unittest
 from DynamicArray import DynamicArray
 
-class Test_Dynamix_Array(unittest.TestCase):
+class Test_DynamicArray(unittest.TestCase):
     
     def test_one(self):
         array = DynamicArray(1)
@@ -31,10 +31,6 @@ class Test_Dynamix_Array(unittest.TestCase):
         array.popback()
         self.assertEqual(array.getSize(), 1)
         self.assertEqual(array.getCapacity(), 2)
-        
-        
-        
-        
         
 
 if __name__ == '__main__':
