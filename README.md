@@ -13,3 +13,5 @@ This repository contains custom data structures that I have developed and freque
 - `getSize(self) -> int`: Returns the number of elements in the array.
 - `getCapacity(self) -> int`: Returns the current capacity of the array.
 
+## MinStack
+### Methods
